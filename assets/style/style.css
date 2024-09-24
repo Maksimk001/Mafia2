@@ -262,6 +262,8 @@ div.fon div.blocklogo {
     }
     section.window div.game {
         margin: 20px 0 0 0;
+        border-left: none;
+        border-right: none;
     }
     section.window div.game p.none {
         display: none;
