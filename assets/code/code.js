@@ -2,6 +2,7 @@ let start = document.querySelector('button.start')
 let minus = document.querySelectorAll('button.minus')
 let counter = document.querySelectorAll('p.counter')
 let plus = document.querySelectorAll('button.plus')
+let state = false
 
 let rolesObject = {
     "Maniac": 0,
@@ -48,5 +49,13 @@ function start_click() {
         rolesObject.Mistress = counter[4].textContent
         rolesObject.Peaceful = counter[5].textContent
     console.log(rolesObject);
-    window.location.href = './transition.html';
+
+    if (state == false) {
+        window.location.href = './transition.html';
+        
+    } else {
+        window.location.href = './game.html';
+    }
+
+    
 }

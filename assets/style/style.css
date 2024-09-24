@@ -6,6 +6,7 @@
     max-width: 100%;
     color: #fff;
     font-weight: 600;
+    /* outline: 4px solid green !important; */
 }
 body {
     background-color: #1e1e1e;
@@ -228,4 +229,60 @@ div.fon div.blocklogo {
     width: 100%;
     height: 30px;
     background-color: #a4ff4f;
+}
+
+@media screen and (max-width: 430px) {
+    section.setting h1 {
+        margin: 20px 0;
+    }
+    section.setting div.players div.roles div.rol p.counter {
+        font-size: 30px;
+    }
+    section.setting div.players div.roles div.rol p:first-child {
+        margin-right: 110px;
+        font-size: 24px;
+    }
+    section.setting div.players div.roles div.rol button {
+        width: 25px;
+        height: 25px;
+    }
+    section.setting div.players {
+        border-left: none;
+        border-right: none;
+    }
+    /* game */
+    section.window {
+        margin: 0;
+    }
+    section.window div.game div.info {
+        width: 100%;
+    }
+    section.window div.game div.info p {
+        width: 33%;
+    }
+    section.window div.game {
+        margin: 20px 0 0 0;
+    }
+    section.window div.game p.none {
+        display: none;
+    }
+    section.window div.game p.none2 {
+        display: none;
+    }
+    section.window div.game div.player img {
+        display: none;
+    }
+    section.window div.game div.player input {
+        width: 100px;
+    }
+    section.window div.game div.player p {
+        width: 115px;
+    }
+    section.window div.game div.state {
+        position: absolute;
+        bottom: 0;
+    }
+    section.window div.game div.player img:last-child {
+        display: block;
+    }
 }
