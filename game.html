@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="fon">
+        <div class="blocklogo"></div>
+    </div>
+    <section class="window" style="margin-bottom: 100px;">
+
+        
+        
+        <h1>Игра</h1>
+
+        <div class="game">
+            <div class="info">
+                <p class="none"></p>
+                <p>Игрок</p>
+                <p>Роль</p>
+                <p>Действие</p>
+                <p></p>
+            </div>
+
+            <div class="player">
+                <img class="avatar" src="./assets/image/Maniac.svg" alt="">
+                <input type="name" class="name">
+                <p>Маньяк</p>
+                <input type="text">
+                <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
+            </div>
+
+            <div class="player">
+                <img class="avatar" src="./assets/image/mafia.svg" alt="">
+                <input type="name" class="name">
+                <p>Мафия</p>
+                <input type="text">
+                <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
+            </div>
+
+            <div class="player">
+                <img class="avatar" src="./assets/image/Doctor.svg" alt="">
+                <input type="name" class="name">
+                <p>Доктор</p>
+                <input type="text">
+                <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
+            </div>
+
+            <div class="player">
+                <img class="avatar" src="./assets/image/Shreif.svg" alt="">
+                <input type="name" class="name">
+                <p>Комисар</p>
+                <input type="text">
+                <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
+            </div>
+
+            <div class="player">
+                <img class="avatar" src="./assets/image/Mistress.svg" alt="">
+                <input type="name" class="name">
+                <p>Любовница</p>
+                <input type="text">
+                <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
+            </div>
+
+            <div class="player">
+                <img class="avatar" src="./assets/image/Peaceful.svg" alt="">
+                <input type="name" class="name">
+                <p>Обыватель</p>
+                <input type="text">
+                <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
+            </div>
+
+           
+
+
+            <div class="state">
+                <div class="d1">
+                    <p>Всего</p>
+                    <p class="number">0</p>
+                </div>
+                <div class="d1">
+                    <p style="color: red;">Убийцы</p>
+                    <p class="number">0</p>
+                </div>
+                <div class="d1">
+                    <p style="color: yellowgreen;">Мирные</p>
+                    <p class="number">0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="./assets/code/code.js"></script>
+</body>
+</html>

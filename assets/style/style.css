@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    max-width: 100%;
+    color: #fff;
+    font-weight: 600;
+}
+body {
+    background-color: #1e1e1e;
+}
+section.setting {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    margin: 0 auto;
+}
+section.setting h1 {
+    font-size: 40px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+section.setting div.players {
+    width: 500px;
+    height: auto;
+    border: 1px solid #fff;   
+    padding: 10px 0 0 0; 
+    margin: 0 auto;
+}
+section.setting div.players p.d1 {
+    font-size: 30px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+section.setting div.players div.roles div.rol {
+    display: flex;
+    align-items: center;
+    background-color: #19191a;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    width: 100%;
+    height: 55px;
+    margin-top: 10px;
+}
+section.setting div.players div.roles div.rol:last-child {
+    border-bottom: none;
+}
+section.setting div.players div.roles div.rol p:first-child {
+    font-size: 30px;
+    margin-left: 30px;
+    width: 140px;
+    margin-right: 200px;
+}
+section.setting div.players div.roles div.rol button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+}
+section.setting div.players div.roles div.rol button img {
+    width: 100%;
+    height: 100%;
+}
+section.setting div.players div.roles div.rol p.counter {
+    font-size: 35px;
+    margin: 0 10px;
+}
+section.setting div.players div.roles div.button {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+}
+section.setting div.players div.roles div.button button {
+    width: 150px;
+    height: 50px;
+    background-color: yellowgreen;
+    color: #000;
+    font-weight: 600;
+    font-size: 25px;
+    border: 1px solid #000;
+}
+section.window {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1e1e1e;
+    margin: 0 auto;
+}
+section.window h1{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+section.window div.game {
+    margin: 50px auto 0 auto;
+    width: 700px;
+    min-height: 200px;
+    border: 1px solid #fff;
+}
+section.window h1 {
+    margin: 0 auto;
+    font-size: 40px;
+}
+section.window div.game div.player {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #19191a;
+    border-bottom: 1px solid #fff;
+} 
+section.window div.game div.player:last-child {
+    border-bottom: none;
+}
+section.window div.game div.player img.avatar {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+}
+section.window div.game div.player input {
+    width: 130px;
+    height: 30px;
+    color: #000;
+    font-weight: 600;
+    padding-left: 5px;
+    font-size: 15px;
+}
+section.window div.game div.player p {
+    width: 140px;
+    text-align: center;
+    font-size: 20px;
+}
+section.window div.game div.player button.kill {
+    width: 29px;
+    height: 29px;
+    background-color: #fff;
+    border: 2px solid red;
+}
+section.window div.game div.info {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+section.window div.game div.info p {
+    text-align: center;
+    align-content: center;
+    height: 100%;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+section.window div.game div.info p.none {
+    width: 100px;
+}
+section.window div.game div.info p:nth-child(2) {
+    width: 160px;
+}
+section.window div.game div.info p:nth-child(3) {
+    width: 200px;
+}
+section.window div.game div.info p:nth-child(4) {
+    width: 160px;
+}
+section.window div.game div.info p:nth-child(5) {
+    width: 80px;
+    text-align: center;
+    border-right: none;
+}
+section.window div.game div.state {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin-top: 50px;
+}
+section.window div.game div.state div.d1 {
+    width: 33.5%;
+    height: 80px;
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    align-items: center;
+}
+section.window div.game div.state div.d1:last-child {
+    border-right: none;
+}
+section.window div.game div.state div.d1 p {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 2px;
+}
+section.window div.game div.state div.d1 p.number {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+
+section.loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+}
+section.loading .logo {
+    width: 1px;
+    height: 30px;
+    background-color: #a4ff4f;
+}
+div.fon {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.fon div.blocklogo {
+    width: 100%;
+    height: 30px;
+    background-color: #a4ff4f;
+}
