@@ -231,7 +231,11 @@ div.fon div.blocklogo {
     background-color: #a4ff4f;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 440px) {
+    
+    section.setting {
+        height: auto;
+    }
     section.setting h1 {
         margin: 20px 0;
     }
@@ -259,11 +263,16 @@ div.fon div.blocklogo {
     }
     section.window div.game div.info p {
         width: 33%;
+        font-weight: 500;
+    }
+    section.window div.game div.info p:nth-child(4) {
+        border-right: none;
     }
     section.window div.game {
         margin: 20px 0 0 0;
         border-left: none;
         border-right: none;
+        border-bottom: none;
     }
     section.window div.game p.none {
         display: none;
@@ -279,12 +288,16 @@ div.fon div.blocklogo {
     }
     section.window div.game div.player p {
         width: 115px;
+        font-weight: 500;
     }
     section.window div.game div.state {
-        position: absolute;
-        bottom: 0;
+        z-index: 2;
+        border-bottom: none;
     }
     section.window div.game div.player img:last-child {
         display: block;
+    }
+    body {
+        font-weight: 200;
     }
 }

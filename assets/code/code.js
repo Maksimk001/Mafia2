@@ -14,7 +14,7 @@ let rolesObject = {
 }
 anime({
     targets: 'div.fon',
-    top: '-1000px',
+    top: '-300vw',
     duration: '10000'
 });
 
