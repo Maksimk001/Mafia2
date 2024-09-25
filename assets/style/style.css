@@ -117,7 +117,7 @@ section.window div.game div.player {
     border-bottom: 1px solid #fff;
 } 
 section.window div.game div.player:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid #fff;
 }
 section.window div.game div.player img.avatar {
     width: 60px;
@@ -230,6 +230,13 @@ div.fon div.blocklogo {
     height: 30px;
     background-color: #a4ff4f;
 }
+div.death {
+    width: 100vw;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid red;
+}
 
 @media screen and (max-width: 440px) {
     
@@ -261,8 +268,12 @@ div.fon div.blocklogo {
     section.window div.game div.info {
         width: 100%;
     }
-    section.window div.game div.info p {
+    section.window div.game div.info p:nth-child(2) {
         width: 33%;
+        font-weight: 500;
+    }
+    section.window div.game div.info p:nth-child(3) {
+        width: 35%;
         font-weight: 500;
     }
     section.window div.game div.info p:nth-child(4) {

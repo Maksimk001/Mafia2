@@ -5,18 +5,14 @@ let plus = document.querySelectorAll('button.plus')
 let state = false
 
 let rolesObject = {
-    "Maniac": 0,
+    "Maniac": 2,
     "Mafia": 0,
     "Doctor": 0,
     "Shrief": 0,
     "Mistress": 0,
     "Peaceful": 0
 }
-anime({
-    targets: 'div.fon',
-    top: '-300vw',
-    duration: '10000'
-});
+
 
 for (let i in counter) {
     minus[i].onclick = function() {
@@ -48,14 +44,7 @@ function start_click() {
         rolesObject.Shrief = counter[3].textContent
         rolesObject.Mistress = counter[4].textContent
         rolesObject.Peaceful = counter[5].textContent
-    console.log(rolesObject);
-
-    if (state == false) {
-        window.location.href = './transition.html';
-        
-    } else {
-        window.location.href = './game.html';
-    }
-
-    
+    console.log(rolesObject); 
+    localStorage.setItem("data", JSON.stringify(rolesObject));
+    window.location.href = './loading.html'
 }
