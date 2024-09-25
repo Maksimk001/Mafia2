@@ -237,6 +237,15 @@ div.death {
     padding: 20px 0;
     border-bottom: 1px solid red;
 }
+div.settingButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 0 5px;
+}
 
 @media screen and (max-width: 440px) {
     

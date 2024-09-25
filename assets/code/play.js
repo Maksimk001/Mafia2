@@ -8,6 +8,7 @@ let rolesObject = JSON.parse(data)
 
 
 
+
 window.onload = function() {
     if (rolesObject.Mafia == 0 && rolesObject.Maniac == 0 && rolesObject.Doctor == 0 && rolesObject.Shrief == 0 && rolesObject.Mistress == 0 && rolesObject.Peaceful == 0)  {
         alert("Должна быть хотя бы одна роль")
@@ -112,4 +113,14 @@ for (let i in buttonkill) {
     textblock[i].onclick = function() {
         kill_click()
     }
+}
+
+
+let settingButton = document.querySelector('div.settingButton')
+
+settingButton.onclick = function() {
+    setting_click()
+}
+function setting_click() {
+    window.location.href = './'
 }
