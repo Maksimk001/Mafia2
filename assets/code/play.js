@@ -108,4 +108,8 @@ for (let i in buttonkill) {
         textblock[i].style.color = 'red'
         death.after(block[i])        
     }
+
+    textblock[i].onclick = function() {
+        kill_click()
+    }
 }
