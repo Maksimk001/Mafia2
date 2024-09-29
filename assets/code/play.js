@@ -5,7 +5,7 @@ anime({
 })
 let data = localStorage.getItem("data")
 let rolesObject = JSON.parse(data)
-
+let itog = document.querySelectorAll('p.number')
 
 
 
