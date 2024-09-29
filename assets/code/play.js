@@ -23,7 +23,7 @@ function add_player() {
                     <img class="avatar" src="./assets/image/Maniac.svg" alt="">
                     <input type="name" class="name">
                     <p>Маньяк</p>
-                    <input type="text">
+                    <input type="text" class="action">
                     <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
             </div>
         `
@@ -35,7 +35,7 @@ function add_player() {
                 <img class="avatar" src="./assets/image/mafia.svg" alt="">
                 <input type="name" class="name">
                 <p>Мафия</p>
-                <input type="text">
+                <input type="text" class="action">
                 <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
             </div>
         `
@@ -47,7 +47,7 @@ function add_player() {
                 <img class="avatar" src="./assets/image/Doctor.svg" alt="">
                 <input type="name" class="name">
                 <p>Доктор</p>
-                <input type="text">
+                <input type="text" class="action">
                 <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
             </div>
         `
@@ -59,7 +59,7 @@ function add_player() {
                 <img class="avatar" src="./assets/image/Shreif.svg" alt="">
                 <input type="name" class="name">
                 <p>Комисар</p>
-                <input type="text">
+                <input type="text" class="action">
                 <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
             </div>
         `
@@ -71,7 +71,7 @@ function add_player() {
                 <img class="avatar" src="./assets/image/Mistress.svg" alt="">
                 <input type="name" class="name">
                 <p>Любовница</p>
-                <input type="text">
+                <input type="text" class="action">
                 <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
             </div>
         `
@@ -83,7 +83,7 @@ function add_player() {
                 <img class="avatar" src="./assets/image/Peaceful.svg" alt="">
                 <input type="name" class="name">
                 <p>Обыватель</p>
-                <input type="text">
+                <input type="text" class="action">
                 <button class="kill"><img src="./assets/image/die.svg" alt=""></button>
             </div>
         `
@@ -123,4 +123,56 @@ settingButton.onclick = function() {
 }
 function setting_click() {
     window.location.href = './'
+}
+
+let statebuttontimer = false
+let buttonstarttimer = document.querySelector('button.timeenable')
+buttonstarttimer.onclick = function() {
+    if (statebuttontimer == false) {
+        statebuttontimer = true
+        buttonstarttimer.style.backgroundColor = 'red'
+        buttonstarttimer.textContent = "Стоп"
+        timerstart()
+    }
+}
+ 
+function timerstart() {
+    let time = 60
+    let min = 1
+    let round = 2
+    let timer = setInterval(() => {
+        let countdown = document.querySelectorAll('p.timer')
+        if(round != 0) {
+            if (time > 10) {
+                countdown[1].textContent = --time
+            } else {
+                countdown[1].textContent = `0${--time}`
+            }
+            countdown[0].textContent = min
+            if (time == 0) {
+                --min
+                time = 60
+                round--
+            }
+        } else if (round == 0 && countdown[0].textContent == 0 && countdown[1].textContent == 0) {
+            clearInterval(timer)
+            console.log('Время вышло');
+            statebuttontimer = false
+            buttonstarttimer.style.backgroundColor = '#a4ff4f'
+            buttonstarttimer.textContent = "Старт"
+            countdown[0].textContent = 2
+        }
+    }, 1000);
+    
+}
+
+let action = document.querySelector('p.action')
+let input = document.querySelectorAll('input.action')
+action.onclick = function() {
+    clearlist()
+}
+function clearlist() {
+    for (let i in input) {
+        input[i].value = "";
+    }
 }
