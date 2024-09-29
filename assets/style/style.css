@@ -280,7 +280,10 @@ div.settingButton {
 @media screen and (max-width: 440px) {
     
     section.setting {
+        margin-top: 20px;
         height: auto;
+        width: 95vw;
+        border: 1px solid #fff;
     }
     section.setting h1 {
         margin: 20px 0;
@@ -289,7 +292,7 @@ div.settingButton {
         font-size: 30px;
     }
     section.setting div.players div.roles div.rol p:first-child {
-        margin-right: 110px;
+        margin-right: 90px;
         font-size: 24px;
     }
     section.setting div.players div.roles div.rol button {
